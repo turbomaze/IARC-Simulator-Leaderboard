@@ -1,0 +1,12 @@
+.idea/
+
+.idea/*
+
+.meteor/local/plugin-cache/
+.meteor/local/plugin-cache/*
+
+.meteor/local/db/
+.meteor/local/db/*
+
+.meteor/local/bundler-cache/
+.meteor/local/bundler-cache/*
