@@ -7,33 +7,40 @@
 </head>
 <body>
   <div class="row">
+      <div class="column column-1">&nbsp;</div>
       <div class="column column-6">
           <h1 class="title">IARC Simulator</h1>
           <div class="row" style="margin: 0 auto; text-align: center">
               <div class="column column-4 info">
-                  Time: <span id="t"></span>,
+                Time: <span id="t"></span>,
               </div>
               <div class="column column-4 info">
-                  Robots left: <span id="num-robots"></span>
+                Robots left: <span id="num-robots"></span>
               </div>
               <div class="column column-4 info">
-                  Score: <span id="score"></span>
+                Score: <span id="score"></span>
               </div>
-
+              <div class="column column-4 info">
+                Reward: <span id="rwd"></span>
+              </div>
+              <div class="column column-4 info">
+                Cumulative: <span id="cum-rwd"></span>
+              </div>
+          </div>
+          <div class="row" style="margin: 0 auto; text-align: center">
               <div class="column column-12" id="play-again-btn-cont">
-                  <a id="play-again-btn" class="btn">
-                      Play again
-                  </a>
+                <a id="play-again-btn" class="btn">
+                  Play again
+                </a>
               </div>
 
               <div class="canvas-container">
-                  <canvas id="canvas"></canvas>
+                <canvas id="canvas"></canvas>
               </div>
           </div>
       </div>
-      <div class="column column-6">
+      <div class="column column-5">
           <div class="outer">
-              <div class="logo"></div>
               <h1 class="title">Leaderboard</h1>
               <div class="subtitle">The very best IARC drone pilots</div>
               {{> leaderboard}}
